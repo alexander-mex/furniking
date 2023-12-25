@@ -1,0 +1,109 @@
+.footer {
+  margin-top: 115px;
+}
+
+.footer_nav-lists {
+  display: grid;
+  grid-template-columns: 320px 170px 80px 135px;
+  justify-content: space-between;
+}
+
+.footer_nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer_nav-desc {
+  margin-top: 18px;
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--blackcolor);
+  font-family: "RubikRegular";
+}
+
+.footer_nav-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_nav-social {
+  font-size: 32px;
+  color: var(--blackcolor);
+  margin-right: 27px;
+}
+
+.footer_nav-social i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.footer_nav-social i:hover {
+  color: #0a58ca;
+}
+
+.footer_nav-title {
+  font-size: 18px;
+  line-height: 40px;
+  font-family: "RubikMedium";
+  letter-spacing: 0.01em;
+  color: var(--blackcolor);
+}
+
+.footer_nav-link {
+  font-size: 16px;
+  line-height: 40px;
+  font-family: "RubikRegular";
+  letter-spacing: 0.01em;
+  color: var(--blackcolor);
+  cursor: pointer;
+}
+
+.footer_nav-link:hover {
+  color: #0a58ca;
+}
+
+.footer_bottom {
+  margin-top: 50px;
+  border-top: 1px solid #969696;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.footer_bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_span {
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--blackcolor);
+  font-family: "RubikRegular";
+}
+
+.footer_bottom-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer_bottom-link {
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--blackcolor);
+  font-family: "RubikRegular";
+  cursor: pointer;
+}
+
+.footer_bottom-link:hover {
+  color: #0a58ca;
+}
+
+.footer_bottom-list:nth-of-type(2) {
+  margin-left: 50px;
+  margin-right: 50px;
+}

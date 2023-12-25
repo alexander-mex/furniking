@@ -1,0 +1,131 @@
+.special {
+  margin-top: 100px;
+  position: relative;
+}
+
+.special-title {
+  margin-bottom: 60px;
+}
+
+.special-card {
+  position: relative;
+  max-width: 570px;
+  width: 100%;
+}
+
+.special-card img {
+  width: 100%;
+}
+
+.special-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 28px;
+  left: 25px;
+  width: max-content;
+}
+
+.trends-title {
+  font-size: 36px;
+  line-height: 45px;
+  color: var(--blackcolor);
+  font-family: "MulishBold";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.review-title {
+  margin-bottom: 90px;
+}
+
+.review-slider {
+  max-width: 815px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.review-slide {
+  padding: 0;
+  display: flex;
+  height: 100%;
+}
+
+.review-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafb;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 80px 125px 47px 125px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.review-desc {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  font-family: "DMSansRegular";
+  color: #515151;
+  margin-bottom: 30px;
+}
+
+.review-slideTitle {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: var(--blackcolor);
+  margin-bottom: 8px;
+  font-family: "MulishSemiBold";
+}
+
+.review-subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "RubikRegular";
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #515151;
+}
+
+.slider__prev,
+.slider__next {
+  position: absolute;
+  top: 65%;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: 50px;
+}
+
+.swiper-button-next {
+  right: 50px;
+}
+
+.swiper-button-prev:after {
+  content: url(../images/arrow-left.png);
+}
+
+.swiper-button-next:after {
+  content: url(../images/arrow-right.png);
+}
+
+.review-photo {
+  position: absolute;
+  top: -40px;
+}
+
+.swiper-button-prev:active {
+  transform: scale(0.9);
+}
+
+.swiper-button-next:active {
+  transform: scale(0.9);
+}
