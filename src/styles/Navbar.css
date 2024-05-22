@@ -1,0 +1,115 @@
+.header__nav {
+  background: var(--greencolor);
+  padding: 10px 0;
+  display: flex;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navs-link,
+.nav-list {
+  color: var(--whitecolor) !important;
+  font-family: RubikRegular !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+}
+
+.navs-link {
+  padding-right: 2.2rem !important;
+  text-decoration: none !important;
+}
+
+.navs-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.nav-itemRight {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.nav-itemLang {
+  margin-right: 8.5rem;
+}
+
+.nav-itemLang::after {
+  content: "";
+  background: var(--whitecolor);
+  width: 2px;
+  height: 16px;
+  position: absolute;
+  right: .8rem;
+  margin-top: 8px;
+}
+
+.nav-lists {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 34px;
+  opacity: 0;
+  background: var(--greencolor);
+  padding: 18px 18px 5px 18px;
+  left: -10px;
+  text-align: left;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.nav-lists.active {
+  opacity: 1;
+  z-index: 999;
+  inset: 6px auto auto 0px !important;
+}
+
+.nav-lists li {
+  margin-bottom: 15px;
+}
+
+.nav-lang-ua {
+  background-color: var(--greencolor) !important;
+  color: var(--whitecolor) !important;
+  font-family: RubikRegular !important;
+  font-size: 16px !important;
+  padding: 20px 20px !important;
+}
+
+.nav-lang-ua:hover span {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.nav_login, .nav_register {
+  position: absolute;
+}
+
+.nav_login {
+  margin-left: 9.5rem;
+  text-decoration: none !important;
+}
+
+.nav_register {
+  margin-left: 14rem;
+  width: 40%;
+  text-decoration: none !important;
+}
+
+.separator {
+  position: absolute;
+  right: 3.8rem;
+  top: 0.27rem;
+  color: var(--whitecolor) !important;
+  font-family: RubikRegular !important;
+  font-size: 16px !important;
+}
+
+span {
+  margin-left: 5px;
+  margin-right: 5px;
+}

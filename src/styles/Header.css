@@ -1,0 +1,137 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0 25px 0;
+}
+
+.header-logo img {
+  cursor: pointer;
+}
+
+.input_search {
+  border: 1.5px solid var(--greencolor);
+  width: 23rem;
+  padding: 10px 0 10px 26px;
+  border-radius: 8px 0 0 8px;
+  border-right: 1.5px solid rgba(227, 227, 227, 0.78);
+  margin-left: 6.5rem;
+  outline: none;
+}
+
+.input_search::placeholder {
+  font-size: 16px;
+  color: var(--graycolor);
+}
+
+.header-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 100%;
+  padding: 10px 26px 10px 10px;
+  background-color: #fff;
+  border: 1.5px solid var(--greencolor);
+  border-left: none;
+  border-radius: 0;
+}
+
+.header-category:hover {
+  background-color: #fff;
+  border-color: var(--greencolor);;
+}
+
+.header-dropdown {
+  font-size: 14px;
+  color: var(--blackcolor);
+  font-family: "RubikRegular";
+  margin-bottom: 0 !important;
+  width: 155px;
+}
+
+.header-dropdown button {
+  background-color: #fff !important;
+  padding: 10px 5px;
+  height: 100%;
+  border: 1.5px solid var(--greencolor) !important;
+  border-left: none !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 14px;
+}
+
+.header-btn {
+  background: var(--greencolor);
+  padding: 10px 20px;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.search__icon {
+  font-size: 16px;
+  color: var(--whitecolor);
+}
+
+.dropdown-menu {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 0 !important;
+  padding-top: 0;
+  border: none;
+  border-radius: 0;
+  /* width: 100%; */
+}
+
+.dropdown-item {
+  padding-top: 10px;
+}
+
+.header-category-list .dropdown-item:not(:last-child) {
+  border-bottom: 0.8px solid #e3e3e3;
+  padding: 10px 15px;
+}
+
+.header-category-list.active::before {
+  display: none;
+}
+
+.header-category-list.inactive {
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.header-menu {
+  align-items: center;
+  width: 100%;
+  margin-left: 12rem;
+}
+
+.header-shoppingBag,
+.header-notification,
+.header-user {
+  font-size: 24px;
+  color: var(--blackcolor);
+  position: relative;
+  margin-right: 1rem;
+  line-height: 24px;
+}
+
+.header-shoppingBag span {
+  position: absolute;
+  font-size: 7px;
+  line-height: 8px;
+  font-family: "RubikRegular";
+  color: var(--whitecolor);
+  background: var(--greencolor);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  right: -4px;
+}

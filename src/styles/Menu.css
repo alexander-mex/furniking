@@ -1,0 +1,160 @@
+.head__menu {
+  background: #f7f8fa;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 82px;
+}
+
+.nav-menu {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  padding: 25px 0 25px 31px;
+  max-width: 260px;
+  width: 100%;
+  position: relative;
+  background-color: var(--greencolor);
+}
+
+.menu-lists {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  top: -410px;
+  background: #f7f8fa;
+  max-width: 260px;
+  width: 100%;
+  left: 0;
+}
+
+.menu-lists::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f7f8fa;
+  z-index: 1;
+  opacity: 1;
+}
+
+.menu-lists.active::before {
+  display: none;
+}
+
+.menu-lists.active {
+  top: 73px;
+  opacity: 1;
+  z-index: 2;
+  padding-left: 0;
+}
+
+.menu-lists li {
+  border-bottom: 0.8px solid #e3e3e3;
+  margin-top: 12px;
+  padding-bottom: 8px;
+}
+
+.menu-link {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--blackcolor);
+  font-family: "RubikRegular";
+  letter-spacing: 0.02em;
+  margin-bottom: 14px;
+  margin-left: 30px;
+}
+
+.menu-linkHome,
+.menu-linkShop,
+.menu-linkBlog,
+.menu-linkAbout,
+.menu-linkContact {
+  display: none;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0 !important;
+  margin-left: -4rem;
+}
+
+.menu-list li:not(:last-child) {
+  margin-right: 35px;
+}
+
+.menu-link {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--blackcolor);
+  font-family: "RubikRegular";
+  cursor: pointer;
+}
+
+.menu-link:hover {
+  color: #0a58ca;
+}
+
+.menu-burger {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin-right: 13px;
+}
+
+.menu-burger::before {
+  content: "";
+  position: absolute;
+  background: var(--whitecolor);
+  width: 18px;
+  height: 2.5px;
+  left: 0;
+  top: 6px;
+  border-radius: 8px;
+}
+
+.bar {
+  position: absolute;
+  width: 12px;
+  height: 2.5px;
+  background: var(--whitecolor);
+  left: 0px;
+  top: 13px;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 8px;
+}
+
+.menu-burger::after {
+  content: "";
+  position: absolute;
+  background: var(--whitecolor);
+  width: 6px;
+  height: 2.5px;
+  left: 0;
+  top: 20px;
+  border-radius: 8px;
+}
+
+.menu-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: var(--whitecolor);
+  font-family: "RubikMedium";
+  margin-bottom: 0 !important;
+}
+
+.menu-title.active {
+  color: var(--whitecolor);
+}

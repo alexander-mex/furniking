@@ -1,0 +1,232 @@
+.trends {
+  margin-top: 120px;
+}
+
+.trends-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.trends-line {
+  transition: 1s all ease;
+  width: 100%;
+}
+
+.trends-slide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 25%;
+  margin-bottom: 48px;
+}
+
+.trends-title {
+  font-size: 36px;
+  line-height: 45px;
+  color: var(--blackcolor);
+  font-family: "MulishBold";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.trends-links {
+  max-width: 570px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 70px;
+}
+
+.trends-link {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "MulishSemiBold";
+  color: var(--tabgrey);
+  cursor: pointer;
+}
+
+.trends-link.active {
+  color: var(--greencolor);
+}
+
+.trends-link:hover {
+  color: #0a58ca;
+}
+
+.trends-cardTitle {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.008em;
+  text-transform: uppercase;
+  color: var(--transparentgrey);
+  margin-top: 15px;
+  margin-bottom: 9px;
+  font-family: "MulishRegular";
+}
+
+.trands-desc {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  color: var(--blackcolor);
+  font-family: "RubikRegular";
+  margin-bottom: 8px;
+}
+
+.trends-newPrice {
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--greencolor);
+  letter-spacing: 0.005em;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "MulishBold";
+  padding-right: 12px;
+}
+
+.trends-oldPrice {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  text-decoration-line: line-through;
+  color: var(--lightgrey);
+  font-family: "MulishBold";
+}
+
+.trends-icons {
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--lightgrey);
+}
+
+.trends-icons.active {
+  color: var(--greencolor);
+}
+
+.trends-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trend-new,
+.trend-sale {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.008em;
+  color: var(--whitecolor);
+  font-family: "MulishSemiBold";
+  background: #00b7f1;
+  border-radius: 0px 0px 5px 0px;
+  position: absolute;
+  padding: 2px 8px;
+  top: 0;
+  left: 0;
+}
+
+.trend-sale {
+  background: var(--greencolor);
+}
+
+.trends-card {
+  position: relative;
+  width: max-content;
+}
+
+.trends-img {
+  max-width: 270px;
+  width: 100%;
+}
+
+.trends-img img {
+  width: 100%;
+}
+
+.trends-img:hover > .trend-icons {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.products-slide {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 45px;
+  padding: 0;
+}
+
+.trend-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 7px;
+  height: 185px;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.5s ease-in-out all;
+}
+
+.trend-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--greycolor);
+  background: var(--whitecolor);
+  box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.09);
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.trend-icon:hover {
+  color: var(--whitecolor);
+  background: var(--greencolor);
+}
+
+.star-green {
+  color: var(--greencolor);
+}
+
+.star-gray {
+  color: var(--lightgrey);
+}
+
+.swiper-pagination.dots {
+  position: relative;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-40px);
+}
+
+.trend-dots {
+  position: static;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.trend-dots {
+  background: none;
+  background-image: url(../images/Circle.png);
+  width: 24px;
+  height: 24px;
+}
+
+.trend-dots-active{
+  background: none;
+  background-image: url(../images/Circle-green.png);
+  width: 24px;
+  height: 24px;
+}

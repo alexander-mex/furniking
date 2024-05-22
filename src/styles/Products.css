@@ -1,0 +1,287 @@
+.production {
+  margin-top: 120px;
+}
+
+.production-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.production-line {
+  transition: 1s all ease;
+  width: 100%;
+}
+
+.production-slide {
+  display: flex;
+  gap: 30px;
+  width: 25%;
+  margin-bottom: 48px;
+}
+
+.production-title {
+  font-size: 36px;
+  line-height: 45px;
+  color: var(--blackcolor);
+  font-family: "MulishBold";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.production-links {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 70px;
+}
+
+.production-link {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "MulishSemiBold";
+  color: var(--tabgrey);
+  cursor: pointer;
+}
+
+.production-link.active {
+  color: var(--greencolor);
+}
+
+.production-cardTitle {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.008em;
+  text-transform: uppercase;
+  color: var(--transparentgrey);
+  margin-top: 15px;
+  margin-bottom: 9px;
+  font-family: "MulishRegular";
+}
+
+.production-desc {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  color: var(--blackcolor);
+  font-family: "RubikRegular";
+  margin-bottom: 8px;
+  width: 258px;
+}
+
+.production-newPrice {
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--greencolor);
+  letter-spacing: 0.005em;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "MulishBold";
+  padding-right: 12px;
+}
+
+.production-oldPrice {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  text-decoration-line: line-through;
+  color: var(--lightgrey);
+  font-family: "MulishBold";
+}
+
+.production-icons {
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--lightgrey);
+}
+
+.production-icons.active {
+  color: var(--greencolor);
+}
+
+.production-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.production-new,
+.production-sale,
+.production-bigsale {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.008em;
+  color: var(--whitecolor);
+  font-family: "MulishSemiBold";
+  background: #00b7f1;
+  border-radius: 0px 0px 5px 0px;
+  position: absolute;
+  padding: 2px 8px;
+  top: 0;
+  left: 0;
+}
+
+.production-sale {
+  background: var(--greencolor);
+}
+
+.production-bigsale {
+  background: #FF6868;
+}
+
+.production-card {
+  position: relative;
+  width: max-content;
+}
+
+.production-img {
+  max-width: 270px;
+  width: 100%;
+}
+
+.production-img img {
+  width: 100%;
+}
+
+.production-img:hover > .production-icons {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.products-slide {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 45px;
+  padding: 0;
+}
+
+.production-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 7px;
+  height: 185px;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.5s ease-in-out all;
+}
+
+.production-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--greycolor);
+  background: var(--whitecolor);
+  box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.09);
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.production-icon:hover {
+  color: var(--whitecolor);
+  background: var(--greencolor);
+}
+
+.product-pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 15px 0 12px 20px;
+  background-color: var(--greencolor);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: "MulishSemiBold";
+}
+
+.product-icon {
+  position: relative;
+  top: 2px;
+  left: 11px;
+  margin-right: 29px;
+}
+
+.pagination {
+  margin-left: 90px;
+  margin-right: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pagination-info {
+  font-size: 18px;
+  font-family: "MulishRegular";
+  color: var(--greycolor);
+}
+
+.pagination-info:first-child {
+  margin-right: -5px;
+}
+
+.pagination-input {
+  width: 60px;
+  margin: 0 0 0 20px;
+  text-align: center;
+  padding: 7px 0;
+  background: #f8fafb;
+  border: 1px solid var(--lightgrey);
+  box-sizing: border-box;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.pagination-prev{
+  margin-left: 20px;
+  background: var(--greencolor);
+  border-radius: 2px 0 0 2px;
+  padding: 8px 12px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.pagination-next {
+  background: var(--greencolor);
+  border-radius: 0 2px 2px 0;
+  padding: 8px 12px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.pagination-button:disabled {
+  background-color: grey;
+  cursor: default;
+}
+
+.pagination-arrow {
+  padding: 10px;
+  background-color: var(--greencolor);
+  color: var(--whitecolor);
+  border: none;
+}
+
+.pagination-arrow:disabled {
+  border-color: grey;
+  color: grey;
+  cursor: default;
+}
