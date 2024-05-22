@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/furniking/static/css/main.fed02b9d.css",
-    "main.js": "/furniking/static/js/main.c68fe063.js",
+    "main.css": "/furniking/static/css/main.45ae7228.css",
+    "main.js": "/furniking/static/js/main.efa2b522.js",
     "static/media/article__card-img3.png": "/furniking/static/media/article__card-img3.6f500993b88711f4511e.png",
     "static/media/main__bg-left.png": "/furniking/static/media/main__bg-left.e36d5417830a811a896a.png",
     "static/media/article__card-img1.png": "/furniking/static/media/article__card-img1.4fc99e129400be3c7163.png",
@@ -42,11 +42,11 @@
     "static/media/support.svg": "/furniking/static/media/support.a3c7f20fd37e4f6d9e68096f9a267981.svg",
     "static/media/wallet.svg": "/furniking/static/media/wallet.8162ea7a0834cfb47c587651e89833f8.svg",
     "index.html": "/furniking/index.html",
-    "main.fed02b9d.css.map": "/furniking/static/css/main.fed02b9d.css.map",
-    "main.c68fe063.js.map": "/furniking/static/js/main.c68fe063.js.map"
+    "main.45ae7228.css.map": "/furniking/static/css/main.45ae7228.css.map",
+    "main.efa2b522.js.map": "/furniking/static/js/main.efa2b522.js.map"
   },
   "entrypoints": [
-    "static/css/main.fed02b9d.css",
-    "static/js/main.c68fe063.js"
+    "static/css/main.45ae7228.css",
+    "static/js/main.efa2b522.js"
   ]
 }
